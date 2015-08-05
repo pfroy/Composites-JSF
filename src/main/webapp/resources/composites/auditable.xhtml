@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:cc="http://java.sun.com/jsf/composite">
+    
+    <cc:interface>
+        <cc:attribute name="auditable" type="ca.taima.dairystudio.composite.Auditable" required="true" />
+    </cc:interface>
+
+    <cc:implementation>
+        <div id="#{cc.clientId}">
+            <ul>
+                <li>Created: #{cc.attrs.auditable.createdBy}</li>
+                <li>Created by: #{cc.attrs.auditable.createdBy}</li>
+                <li>Modified: #{cc.attrs.auditable.createdBy}</li>
+                <li>Modified by: #{cc.attrs.auditable.createdBy}</li>
+            </ul>
+        </div>
+    </cc:implementation>
+    
+</html>
